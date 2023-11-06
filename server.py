@@ -22,17 +22,17 @@ while True:
     if resta<=0:
         resta = resta*-1
 
-    if int(rta) > numero and (resta<= 1 or resta >=20):
+    if int(rta) > numero and (resta>= 1 and resta <=20):
         mensaje = "El numero es menor y estas muy cerca"
-    elif int(rta) > numero and (resta <20 or resta >=60):
+    elif int(rta) > numero and (resta >20 and resta <=60):
         mensaje = "El numero es menor"
-    elif int(rta) > numero and (resta <60 or resta >=99):
+    elif int(rta) > numero and (resta >60 and resta <=99):
         mensaje = "El numero es menor y estas lejos"
-    elif int(rta) < numero and (resta<= 1 or resta >=20):
+    elif int(rta) < numero and (resta>= 1 and resta <=20):
         mensaje = "El numero es mayor y estas muy cerca"
-    elif int(rta) < numero and (resta <20 or resta >=60):
+    elif int(rta) < numero and (resta >20 and resta <=60):
         mensaje = "El numero es mayor"
-    elif int(rta) < numero and (resta <60 or resta >=99):
+    elif int(rta) < numero and (resta >60 and resta <=99):
         mensaje = "El numero es mayor y estas lejos"
     elif int(rta) == numero:
         mensaje = f"Acertaste"
